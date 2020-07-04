@@ -200,6 +200,9 @@ footer .social a i:hover {
 }
 
 @media screen and (max-width: 700px) {
+  header {
+    margin: 0;
+  }
   .ham {
     display: block;
     background-color: transparent;
@@ -207,7 +210,6 @@ footer .social a i:hover {
     cursor: pointer;
     position: relative;
     z-index: 99;
-    /* filter: brightness(0) invert(1); */
   }
   .ham:focus {
     outline: none;
@@ -241,7 +243,7 @@ footer .social a i:hover {
     transition: transform 0.4s ease;
     transition: transform 0.4s ease, -webkit-transform 0.4s ease;
   }
-  ul li {
+  ul li, ul button {
     margin: 1.25rem 1.875rem;
     text-align: center;
   }
@@ -264,6 +266,9 @@ footer .social a i:hover {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .hero_text a {
+    margin-right: .6em;
   }
   footer {
     display: -webkit-box;
